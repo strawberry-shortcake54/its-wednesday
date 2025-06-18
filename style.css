@@ -1,0 +1,17 @@
+body {
+    background-color: pink
+    font-family 'comic Sans MS', cursive
+    text-align: center
+    padding-top: 100px
+}
+element::-webkit-validation-bubble-text-block 
+{
+    padding: 10px
+    border;2px;solid#f5a6c5
+border:radius10px
+background-color pink
+front:size16px
+box-shadow:1 4px 10px rgba (255,182,193,0.4)
+colour: #d3384d
+}
+body{background-color: pink;}
