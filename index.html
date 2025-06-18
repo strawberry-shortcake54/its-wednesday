@@ -1,43 +1,39 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title> HAPPY HAPPY WEDNESDAY</title>
-        <link rel="stylesheet"href="style.css">
-        <head>
-           <body>
- 
-            <h1>HAPPY HAPPY WEDNESDAY!!!💖</h1> <img src="https://gifdb.com/images/high/elmo-blowing-kisses-sppqsl5jhv0dc2i0.webp" alt="Cute gif" style="width: 200px; border-radius: 15px;position: center; right: 10px;
-  <div class="messages" id="messageBoard">
-            <h2>Good morning MAMA, ITS WEDNESDAY!😁 i love you so so so so much and im going to miss you 7 apples trees today😪🍎 enjoy work, ek gaan nou slaap 😴
-</h2>
-<h3>a beautiful life, its all around, in every smile and every sound. life is a treasure and its ours to hold.🌷</h3>
-            <input type="text" class="cute-box"
-            <div class="section">
-  <h2>Leave Me a Message 💌</h2>
- 
-  <textarea id="userMessage" class="textbox" placeholder="Type your message here..."></textarea><br>
-  <button class="button" onclick="postMessage()">Send</button>
- 
-  
-    <h3>Messages from Visitors 💬</h3>
+<head>
+  <title>How Do You Feel Today?</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>How Do You Feel Today?</h1>
+    <button onclick="showResponse('happy')">😊 Happy</button>
+    <button onclick="showResponse('sad')">😢 Sad</button>
+    <button onclick="showResponse('anxious')">😟 Anxious</button>
+    <p id="response"></p>
   </div>
-</div>
-
-<script>
-  function postMessage() {
-    const input = document.getElementById("userMessage");
-    const messageBoard = document.getElementById("messageBoard");
-
-    if (input.value.trim() !== "") {
-      const newMsg = document.createElement("div");
-      newMsg.classList.add("message");
-      newMsg.textContent = input.value;
-      messageBoard.appendChild(newMsg);
-      input.value = ""; // Clear textbox
-    }
-  }
-</script>
-
-           </body> 
-        </head>
+  <script src="script.js"></script>
+</body>
 </html>
+👉 style.css:
+
+css
+Copy
+Edit
+body {
+  background-color: #f7f3e9;
+  font-family: 'Georgia', serif;
+  color: #4e4e4e;
+  text-align: center;
+  padding: 50px;
+}
+button {
+  background-color: #c7d8b6;
+  color: #333;
+  border: none;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #b0c8a4;
+}

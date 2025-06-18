@@ -1,17 +1,19 @@
 body {
-    background-color: pink
-    font-family 'comic Sans MS', cursive
-    text-align: center
-    padding-top: 100px
+  background-color: #f7f3e9;
+  font-family: 'Georgia', serif;
+  color: #4e4e4e;
+  text-align: center;
+  padding: 50px;
 }
-element::-webkit-validation-bubble-text-block 
-{
-    padding: 10px
-    border;2px;solid#f5a6c5
-border:radius10px
-background-color pink
-front:size16px
-box-shadow:1 4px 10px rgba (255,182,193,0.4)
-colour: #d3384d
+button {
+  background-color: #c7d8b6;
+  color: #333;
+  border: none;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 10px;
+  cursor: pointer;
 }
-body{background-color: pink;}
+button:hover {
+  background-color: #b0c8a4;
+}
