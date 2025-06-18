@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> HAPPY HAPPY WEDNESDAY</title>
+        <link rel="stylesheet"href="style.css">
+        <head>
+           <body>
+ 
+            <h1>HAPPY HAPPY WEDNESDAY!!!💖</h1> <img src="https://gifdb.com/images/high/elmo-blowing-kisses-sppqsl5jhv0dc2i0.webp" alt="Cute gif" style="width: 200px; border-radius: 15px;position: center; right: 10px;
+  <div class="messages" id="messageBoard">
+            <h2>Good morning babe, ITS WEDNESDAY!😁 i love you so so so so much cutie, i hope you have a wonderful day at work, a great day at the office and an amzing lunch.💖 never forget, you are special!👍
+</h2>
+<h3>a beautiful life, its all around, in every smile and every sound. life is a treasure and its ours to hold.🌷</h3>
+            <input type="text" class="cute-box"
+            <div class="section">
+  <h2>Leave Me a Message 💌</h2>
+ 
+  <textarea id="userMessage" class="textbox" placeholder="Type your message here..."></textarea><br>
+  <button class="button" onclick="postMessage()">Send</button>
+ 
+  
+    <h3>Messages from Visitors 💬</h3>
+  </div>
+</div>
+
+<script>
+  function postMessage() {
+    const input = document.getElementById("userMessage");
+    const messageBoard = document.getElementById("messageBoard");
+
+    if (input.value.trim() !== "") {
+      const newMsg = document.createElement("div");
+      newMsg.classList.add("message");
+      newMsg.textContent = input.value;
+      messageBoard.appendChild(newMsg);
+      input.value = ""; // Clear textbox
+    }
+  }
+</script>
+
+           </body> 
+        </head>
+</html>
